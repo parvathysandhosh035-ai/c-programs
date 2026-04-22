@@ -1,0 +1,23 @@
+program 1:-
+input:-
+#include <stdio.h>
+int main() 
+{
+    int x, original, reversed = 0, remainder;
+    scanf("%d", &x);
+    original = x;
+    while (x != 0)
+{
+        remainder = x % 10;
+        reversed = reversed * 10 + remainder;
+        x /= 10;
+    }
+    if (original == reversed)
+        printf("true");
+    else
+        printf("false");
+    return 0;
+}
+ouput:
+ enter a number:-121
+true palindrone
